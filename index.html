@@ -27,7 +27,7 @@
             padding: 20px;
             position: absolute;
             top: 0;
-            background-color: #333; /* Set your desired menu background color */
+            background-color: #00FF00; /* Updated background color to green */
             color: #fff; /* Set your desired text color */
         }
 
@@ -41,6 +41,10 @@
             display: flex;
             justify-content: flex-end;
             gap: 20px;
+        }
+
+        .menu-items a {
+            color: #ffffff; /* Change font color of menu items to white */
         }
 
         .content {
@@ -77,9 +81,8 @@
 <body>
     <div class="hero">
         <div class="menu">
-            <a class="logo" href="#"><img src="data:image/png;base64,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" alt="Your Logo"></a>
+           <a class="logo" href="#"><img src="https://qwestore.com/png_images_min/10/bWhatsApp-logo-PNGb-image-New-bWhatsapp-6103.png" alt="Your Logo"></a>
 
-            <div class="menu-items">
                 <a href="#">Menu 1</a>
                 <a href="#">Menu 2</a>
             </div>
@@ -92,3 +95,4 @@
     </div>
 </body>
 </html>
+
